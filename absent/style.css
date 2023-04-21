@@ -1,0 +1,236 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #1a59c6;
+  height: 150px;
+  position: fixed;
+}
+nav #icon{
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  align-items: center;
+}
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+.link {
+  color: #Ffffff;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: red;
+}
+
+a:hover{
+  border:1px solid white;
+  transition: .5s;
+}
+
+.sch {
+  display: none;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.tit {
+  color: white;
+  font-size: 48px;
+  
+}
+
+.btn {
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+.btn:hover{
+  color:red;
+}
+
+.datepicker {
+  background-color: white;
+  height: 40px;
+  width: 260px;
+  border-radius: 5px;
+  padding-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.datepicker input[type="date"] {
+  border: 1px;
+  background-color: #aaaaa4;
+  font-size: 14px;
+}
+
+.datepicker button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+table {
+  width: 100%;
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #1a59c6;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  font-size: 16px;
+  vertical-align: middle;
+}
+td.present {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+td.absent {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+td.tardy {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+td.na {
+  background-color: #c8d6e5;
+  color: #333;
+}
+
+.footer {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+/********************************************/
+@media (max-width:1300px) {
+  nav #icon{
+      display: block;
+  }
+  nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2f3640;
+      top: 133px;
+      left: -10000px;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav li{
+      display: block;
+      margin: 100px 0;
+      line-height: 30px;
+  }
+  nav a{
+      font-size: 20px;
+      text-decoration: none;
+  }
+  nav ul.show{
+      left: 0;
+  }
+  .tit{
+      margin-left: 20%;
+  }
+  /* time start */
+  .datepicker {
+  background-color:#2f3640;
+  border: 1px solid white;
+  height: 40px;
+  width: 260px;
+  border-radius: 5px;
+  padding-top: 2px;   
+  margin:auto;
+}
+.datepicker input[type="date"] {
+  border: 1px solid white;
+  background-color: #2f3640;
+  font-size: 14px;
+  color: white;
+  
+}
+
+.datepicker button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.datetext{
+  color: white;
+}
+.show{
+  margin-left: -2.5rem;
+}
+/* time end */
+}
+/********************************************/
+@media (max-width:1000px) {
+  .tit{
+      margin-left: 10%;
+  }
+
+}
+/********************************************/
+@media(max-width:700px) {
+    nav{
+      background-color: #1a59c6;
+  }
+  .tit{
+      font-size: 35px;
+      margin-left: 7%;
+  }
+}
